@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ExpressRoofing</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+
+<!-- Google Fonts
+    ================================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400' rel='stylesheet' type='text/css'>
+<!-- End
+    ================================================== -->
+    <%= csrf_meta_tags %>
+</head>
+<body>
+    <%= render 'layouts/navbar'%>
+<div class='stuff'>
+<%= yield %>
+    </div>
+    <%= render 'layouts/footer'%>
+
+
+</body>
+</html>
