@@ -1,23 +1,44 @@
 <!-- Home Page
     ==========================================-->
-<div id="tf-home" class="text-center">
+<div id="express-home" class="text-center">
     <br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
 
-    <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
+<!-- Button trigger modal -->
+    <div id='talk'>
+                    <i class="fa fa-mobile pull-right"
+ data-toggle="modal" data-target="#myModal" ></i></div>
 
-    <br><br>
 
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Get Your Free Inspection!</h4>
+      </div>
+      <div class="modal-body">
+          <%= render 'homes/contact'%>
+      </div>
+
+    </div>
+  </div>
 </div>
+    <a href="#express-about" class="fa fa-angle-down page-scroll"></a>
 
+    </div>
 
     <!-- About Us Page
     ==========================================-->
-    <div id="tf-about">
+    <div id="express-about">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-        <%= image_tag ("texas_flag.jpg"), class: "img-responsive" %>
+                    <br>
+                    <br>
+                    <br>
+                    <%= image_tag ("dallas1.jpg"), class: "img-responsive" %>
                 </div>
                 <div class="col-md-6">
                     <div class="about-text">
@@ -27,7 +48,7 @@
                             <hr>
                             <div class="clearfix"></div>
                         </div>
-                        <p class="intro">We're from The Lone Star State, so naturally we build roofs the Texas way. Elegant. Strong. Tough. Durable. We believe in the quality of our work, that's why we provide a guarantee from start to finish.</p>
+                        <p class="intro">Welcome to Express Roofing Contractors USA, a family owned business proudly hailing from The Lone Star State. Here at Express Roofing we like to stay true to our roots, and being from Texas that means building the Texas way. Elegant. Tough. Durable. We beleive that a home lacking a proper roof, is a home lacking proper foundation. That's why we offer free inspections. We believe in the quality of our work and providing no-nonsense service. That's why we provide a guarantee from start to finish. We know that it's the subtle differences that make a house a home. That's why we only use the highest quality materials.</p>
                         <ul class="about-list">
                             <li>
                                 <span class="fa fa-dot-circle-o"></span>
@@ -46,11 +67,12 @@
                 </div>
             </div>
         </div>
+        <br>
+        <br>
     </div>
-
     <!-- Services Section
     ==========================================-->
-    <div id="tf-services" class="text-center">
+    <div id="express-services" class="text-center">
         <div class="container">
             <div class="section-title center">
                 <h2>What we<strong> DO</strong></h2>
@@ -121,11 +143,11 @@ Lorizzle ipsizzle yo mamma sit amet, fo shizzle mah nizzle fo rizzle, mah home g
     <!-- Portfolio Section
     ==========================================-->
 <br><br><br><br><br>
-<div id="lightbox" class="row">
+<div id="express-portfolio" class="row">
         <div class="section">
             <div class="container">
               <div class="section-title text-center center">
-                <h2>Take a Look at <strong>Our Portfolio</strong></h2>
+                <h2 class="portfolio-title">Take a Look at <strong>Our Work</strong></h2>
                 <div class="line">
                     <hr>
                 </div>
@@ -146,7 +168,7 @@ Lorizzle ipsizzle yo mamma sit amet, fo shizzle mah nizzle fo rizzle, mah home g
 
                                         <a class="overlay" data-toggle="modal" data-target="#project-1">
                                             <i class="fa fa-search-plus"></i>
-                                            <span>What we install</span>
+                                            <span>We Install Asphalt Shingles</span>
                                         </a>
                                     </div>
                                     <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-1">Learn More</a>
@@ -160,7 +182,7 @@ Lorizzle ipsizzle yo mamma sit amet, fo shizzle mah nizzle fo rizzle, mah home g
                                                 <h4 class="modal-title" id="project-1-label">Project Title</h4>
                                             </div>
                                             <div class="modal-body">
-                                                <h3>Project Description</h3>
+                                                <h3>Asphalt Shingles</h3>
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.</p>
@@ -186,7 +208,7 @@ Lorizzle ipsizzle yo mamma sit amet, fo shizzle mah nizzle fo rizzle, mah home g
                                         <%=image_tag ("estimates.jpeg") %>
                                         <a class="overlay" data-toggle="modal" data-target="#project-2">
                                             <i class="fa fa-search-plus"></i>
-                                            <span>App Development</span>
+                                            <span>We Install Metal Roofs</span>
                                         </a>
                                     </div>
                                     <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-2">Learn More</a>
@@ -200,7 +222,7 @@ Lorizzle ipsizzle yo mamma sit amet, fo shizzle mah nizzle fo rizzle, mah home g
                                                 <h4 class="modal-title" id="project-2-label">Learn More </h4>
                                             </div>
                                             <div class="modal-body">
-                                                <h3>Project Description</h3>
+                                                <h3>Metal Roofs</h3>
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.</p>
@@ -226,7 +248,7 @@ Lorizzle ipsizzle yo mamma sit amet, fo shizzle mah nizzle fo rizzle, mah home g
                                         <%=image_tag ("work1.jpeg") %>
                                         <a class="overlay" data-toggle="modal" data-target="#project-3">
                                             <i class="fa fa-search-plus"></i>
-                                            <span>Web Design</span>
+                                            <span>We Install Stone-Coated Steel Roofs</span>
                                         </a>
                                     </div>
                                     <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-3">Learn More</a>
@@ -240,7 +262,7 @@ Lorizzle ipsizzle yo mamma sit amet, fo shizzle mah nizzle fo rizzle, mah home g
                                                 <h4 class="modal-title" id="project-3-label">Learn More</h4>
                                             </div>
                                             <div class="modal-body">
-                                                <h3>Project Description</h3>
+                                                <h3>Stone-Coated Steel Roofs</h3>
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.</p>
@@ -267,7 +289,7 @@ Lorizzle ipsizzle yo mamma sit amet, fo shizzle mah nizzle fo rizzle, mah home g
 
                                         <a class="overlay" data-toggle="modal" data-target="#project-4">
                                             <i class="fa fa-search-plus"></i>
-                                            <span>Site Building</span>
+                                            <span>We Install Clay Tiles</span>
                                         </a>
                                     </div>
                                     <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-4">Learn More</a>
@@ -281,7 +303,7 @@ Lorizzle ipsizzle yo mamma sit amet, fo shizzle mah nizzle fo rizzle, mah home g
                                                 <h4 class="modal-title" id="project-4-label">Learn More</h4>
                                             </div>
                                             <div class="modal-body">
-                                                <h3>Project Description</h3>
+                                                <h3>Clay Tiles</h3>
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.</p>

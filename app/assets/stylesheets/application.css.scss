@@ -105,24 +105,24 @@ ul, ol{
     moz-padding: 0;
 }
 /* Navigation */
-#tf-menu {
+#express-menu {
     padding: 20px;
     transition: all 0.8s;
     background: #333333;
 
 }
-#tf-menu.navbar-default {
+#express-menu.navbar-default {
     background-color: rgba(248, 248, 248, 0);
     border-color: rgba(231, 231, 231, 0);
 }
-#tf-menu a.navbar-brand {
+#express-menu a.navbar-brand {
 text-transform: uppercase;
 font-size: 22px;
 color: #fff;
 font-weight: 900;
 }
 
-#tf-menu.navbar-default .navbar-nav > li > a {
+#express-menu.navbar-default .navbar-nav > li > a {
     text-transform: uppercase;
     color: #FFF;
     font-size: 12px;
@@ -152,17 +152,19 @@ font-weight: 900;
     background-color: #FFF;
     }
 /* Home Style */
-#tf-home{
+#express-home{
     background: image_path('01.png');
+//    background: url('01.png');
     background-size: 100%;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: #cfcfcf;
     background-color: black;
+    padding-bottom: 19px;
 }
 
-#tf-home .overlay{
+#express-home .overlay{
     background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
@@ -172,18 +174,6 @@ font-weight: 900;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
     height: 750px;
     background-attachment: fixed;
-}
-#tf-home p.lead{
-    color: #e3e3e3;
-}
-
-.content{
-    position: relative;
-    padding: 20% 0 0;
-}
-
-.color{
-    color: #FAD743;
 }
 
 a.fa.fa-angle-down {
@@ -201,15 +191,40 @@ a.fa.fa-angle-down:hover{
     border: 2px solid #FAD743;
 }
 
+/* Talk Button */
+
+
+#talk i.fa.fa-mobile{
+    font-size: 30px;
+    padding: 12px 22px;
+    border: 2px solid #b4b4b4;
+    transition: all 0.5s;
+    border-radius: 50%;
+    position: fixed;
+    margin-left: 45%;
+    margin-top: 16%
+
+}
+
+#talk:hover>i.fa{
+    background: #FAD743;
+    color: #ffffff;
+    border: 2px solid #FAD743;
+
+}
+
 
 /* About Section */
-#tf-about{
-    padding: 80px 0;
+#express-about{
+    padding: 80px 0px;
     color: white;
-//    background: #333333;
-//    background: #656565;
+
 }
-ul.about-list{ margin: 30px 0 0 ;}
+ul.about-list{
+    margin: 30px 0 0;
+
+}
+
 ul.about-list li{
     display: block;
     font-size: 16px;
@@ -222,9 +237,8 @@ ul.about-list li span{
 }
 
 
-
 /* Services Section */
-#tf-services{
+#express-services{
     padding: 80px 0;
     background: white;
     font-family: 'Open Sans', sans-serif;
@@ -235,7 +249,7 @@ ul.about-list li span{
     margin-top: 40px;
 }
 
-#tf-services i.fa {
+#express-services i.fa {
     font-size: 40px;
     border: 4px solid #FAD743;
     width: 100px;
@@ -246,12 +260,12 @@ ul.about-list li span{
     transition: all 0.5s;
 }
 
-#tf-services i.fa.fa-mobile{
+#express-services i.fa.fa-mobile{
     font-size: 50px;
     padding: 20px 25px;
 }
 
-#tf-services .service:hover>i.fa{
+#express-services .service:hover>i.fa{
     background: #FAD743;
     color: #ffffff;
 }
@@ -262,11 +276,14 @@ color: black;
 
 // Portfolio
 //-----------------------------------------------------------------------------
-.section-title
+#express-portfolio.section-title
 {
 color: #FAD743;
+padding: 80px 0;
 }
-
+.portfolio-title{
+    color: #FAD743;
+}
 .porttext{
 color: white;
 font-family: 'Open Sans', sans-serif;
@@ -362,10 +379,18 @@ font-family: 'Open Sans', sans-serif;
 
 //footer
 
-#footer{
-background: white;
-}
+//.footer-title.text-center .line {
+//  border-top: 4px solid #FAD743;
+//  height: 10px;
+////  width: 60px;
+//  text-align: center;
+//  margin: 0 auto;
+//  margin-top: 20px;
+//}
 
+.footer-line{
+    border-top: 2px solid #FAD743;
+}
 .subfooter {
     background-color: #fafafa;
     border-top: 1px solid #f3f3f3;
@@ -382,8 +407,6 @@ background: white;
     color: #cccccc;
 }
 
-list-icons>fa{
-color: goldenrod;}
 
 /* Social Links
 ---------------------------------- */
@@ -498,4 +521,13 @@ textarea {
 .list-icons li {
     padding: 0 0 15px 0;
     color: black
+}
+
+.list-icons li i {
+    padding: 0 0 15px 0;
+    color: #FAD743;
+}
+
+.squad>a{
+color: #00bcd4
 }
