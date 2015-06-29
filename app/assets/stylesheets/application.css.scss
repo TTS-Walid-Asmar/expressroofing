@@ -22,13 +22,14 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400);
 
+/* General */
+
 body{
 //    font-family: 'Lato', sans-serif;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     color: #5a5a5a;
     background: #333333;
-    background: black;
 
 }
 
@@ -118,6 +119,8 @@ ul, ol{
     webkit-padding: 0;
     moz-padding: 0;
 }
+
+
 /* Navigation */
 
 #express-menu {
@@ -167,14 +170,16 @@ ul, ol{
 .navbar-default .navbar-toggle:hover>.icon-bar {
     background-color: #FFF;
     }
+
+
 /* Home Style */
+
 #express-home{
-    background: url("home.png");
+    background-image:image-url('home.png');
     background-size: 100%;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    color: #cfcfcf;
     background-color: black;
     padding-bottom: 19px;
 }
