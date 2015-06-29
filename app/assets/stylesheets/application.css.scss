@@ -22,18 +22,20 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400);
 
-body, html{
-    font-family: 'Lato', sans-serif;
+body{
+//    font-family: 'Lato', sans-serif;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     color: #5a5a5a;
     background: #333333;
-}
+    background: black;
 
+}
 
 .stuff{
     background: #333333;
 }
+
 .section-title.center .line {
   border-top: 4px solid #FAD743;
   height: 10px;
@@ -42,39 +44,51 @@ body, html{
   margin: 0 auto;
   margin-top: 20px;
 }
+
 h1{
     text-transform: uppercase;
 }
+
 h1 strong{
     font-weight: 900;
 }
+
 h2{
     text-transform: uppercase;
     line-height: 20px;
     margin:  0;
 }
+
 h3{
 font-size: 18px;
 font-weight: 900;
 }
+
 h4{
     text-transform: uppercase;
 }
+
 h5{
     text-transform: uppercase;
     font-weight: 700;
     line-height: 20px;
 }
+
 p{
     font-family: 'Open Sans', sans-serif;
 }
+
 p.intro{
     font-size: 16px;
     margin: 12px 0 0;
     line-height: 24px;
     font-family: 'Open Sans', sans-serif;
 }
-a{ color: #FAD743;}
+
+a{
+    color: #FAD743;
+}
+
 a:hover,
 a:focus{
     text-decoration: none;
@@ -105,6 +119,7 @@ ul, ol{
     moz-padding: 0;
 }
 /* Navigation */
+
 #express-menu {
     padding: 20px;
     transition: all 0.8s;
@@ -116,10 +131,11 @@ ul, ol{
     border-color: rgba(231, 231, 231, 0);
 }
 #express-menu a.navbar-brand {
-text-transform: uppercase;
-font-size: 22px;
-color: #fff;
-font-weight: 900;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 900;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #express-menu.navbar-default .navbar-nav > li > a {
@@ -132,6 +148,7 @@ font-weight: 900;
     background-color: #222222 !important;
     padding: 0 !important;
 }
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -139,7 +156,6 @@ font-weight: 900;
     background-color: transparent;
     font-weight: 700;
 }
-
 .navbar-toggle {
     border-radius: 0;
     }
@@ -153,7 +169,7 @@ font-weight: 900;
     }
 /* Home Style */
 #express-home{
-    background: image_path("home.png");
+    background: url("home.png");
     background-size: 100%;
     background-position: center;
     background-attachment: fixed;
@@ -170,7 +186,7 @@ a.fa.fa-angle-down {
     border: 2px solid #b4b4b4;
     border-radius: 50%;
     font-size: 24px;
-    margin-top: 200px;
+    margin-top: 250px;
     transition: all 0.5s;
 }
 a.fa.fa-angle-down:hover{
@@ -190,7 +206,7 @@ a.fa.fa-angle-down:hover{
     border-radius: 50%;
     position: fixed;
     margin-left: 45%;
-    margin-top: 16%
+    margin-top: 19.3%
 
 }
 
@@ -311,7 +327,7 @@ font-family: 'Open Sans', sans-serif;
     display: block;
     bottom: 10px;
     text-align: center;
-    width: 100%;
+    width: 1000%;
     color: #ffffff;
     font-size: 13px;
     font-weight: 300;
@@ -365,16 +381,13 @@ font-family: 'Open Sans', sans-serif;
 
 
 
-//footer
-
-//.footer-title.text-center .line {
-//  border-top: 4px solid #FAD743;
-//  height: 10px;
-////  width: 60px;
-//  text-align: center;
-//  margin: 0 auto;
-//  margin-top: 20px;
-//}
+/*footer
+---------------------------------- */
+footer{
+    padding:50px 0 0 0;
+    background-color: #c1c1c1;
+    color: #FAD743;
+}
 
 .footer-line{
     border-top: 2px solid #FAD743;
@@ -393,6 +406,10 @@ font-family: 'Open Sans', sans-serif;
 .default-bg blockquote footer,
 .translucent-bg blockquote footer {
     color: #cccccc;
+}
+
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6{
+    color: #333;
 }
 
 
@@ -476,13 +493,15 @@ textarea {
     transition: all 0.2s ease-in-out;
 }
 .btn-default {
-    color: #55acee;
-    border: 1px solid #cccccc;
+    color: #FAD743;
+    border: 1px solid #FAD743;
+    color: #333;
 }
+
 .btn-default:hover {
     color: #ffffff;
-    background-color: #339BEB;
-    border-color: #339BEB;
+    background-color: #FAD743;
+    border-color: #FAD743;
 }
 
 .large {
@@ -517,5 +536,12 @@ textarea {
 }
 
 .squad>a{
-color: #00bcd4
+    color: #00bcd4;
+    text-decoration: line-through;
+
+}
+
+.squad > a:hover {
+    color:#F45B69;
+    text-decoration:overline;
 }
