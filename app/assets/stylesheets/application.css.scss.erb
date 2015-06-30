@@ -27,29 +27,73 @@
         padding: 40% 0 0;
     }
 
-    html{
+    #express-home{
+    background-image: url(<%= asset_path "home.png" %>);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+    body{
         background: black;
         overflow-x: hidden;
 
-}
+    }
+
+    #talk i.fa.fa-mobile{
+        position: fixed;
+        margin-left: 41%;
+        margin-top: 30%;
+
+    }
 }
 
 @media (max-width: 603px){
-    html{
+    body{
         background: black;
         overflow-x: hidden;
+    }
 
-}
+    #express-home{
+        background-image: url(<%= asset_path "home.png" %>);
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+
+    #talk i.fa.fa-mobile{
+        position: fixed;
+        margin-left: 41%;
+        margin-top: 30%;
+
+    }
 }
 @media (max-width: 360px){
-    html{
+    body{
         background: black;
         overflow-x: hidden;
 
-}
+    }
+
+    #express-home{
+        background-image: url(<%= asset_path "home.png" %>);
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-color: black;
+    }
+
+    #talk i.fa.fa-mobile{
+        position: fixed;
+        margin-left: 41%;
+        margin-top: 30%;
+
+    }
 
 }
-}
+
 
 /* General */
 html{
